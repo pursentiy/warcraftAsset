@@ -80,6 +80,11 @@ body::-webkit-scrollbar-thumb
     width: 12px;
     background-color: rgba(0, 0, 0, 0);
 }
+#unity-fullscreen-button{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
 
 .sidebar::-webkit-scrollbar-thumb
 {

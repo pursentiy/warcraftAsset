@@ -1,9 +1,10 @@
-var container = document.querySelector("#unity-container");
+      var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
+      var fullScreenBlock = document.querySelector("#unity-fullscreen-block");
 
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
@@ -54,9 +55,12 @@ var container = document.querySelector("#unity-container");
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
+        fullScreenBlock.style = "display: none";
       } else {
         canvas.style.width = "960px";
         canvas.style.height = "600px";
+
+        container.style = "width: 960px; height: 600px; padding: 70px 0 70px 0"
       }
       loadingBar.style.display = "block";
 

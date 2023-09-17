@@ -81,8 +81,15 @@ body::-webkit-scrollbar-thumb
     background-color: rgba(0, 0, 0, 0);
 }
 #unity-fullscreen-button{
-  width: 100px;
-  height: 100px;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../img/full-screen.png) no-repeat center;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+#unity-canvas{
   background-color: red;
 }
 
@@ -175,6 +182,23 @@ body::-webkit-scrollbar-thumb
 .sidebarGame.activeSidebar:before {
   height: 100%;
   width: 5px;
+}
+
+#unity-fullscreen-block{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-content: center;
+  margin-top: 15px;
+}
+
+#unity-fullscreen-block p{
+  font-size: 25px;
+  line-height:35px;
+}
+
+#unity-fullscreen-button{
+  margin-left: 15px;
 }
 
 .project .header {
@@ -335,7 +359,7 @@ body::-webkit-scrollbar-thumb
 }
 
 .game .mainContent .description {
-  width: 35%;
+  width: 75%;
 }
 
 .game .mainContent .media {
@@ -406,27 +430,31 @@ body::-webkit-scrollbar-thumb
 }
 
 .laserDefender .header {
-  background: #9c7d4d;
+  background: #000;
 }
 
 .laserDefender .hr {
-  background: #9c7d4d;
+  background: #000;
 }
 
 .laserDefender .owl-theme .owl-dots .owl-dot.active span {
-  background: #9c7d4d;
+  background: #000;
 }
 
 .laserDefender .owl-theme .owl-dots .owl-dot:hover span {
-  background: #9c7d4d;
+  background: #000;
 }
 
 .sidebarGame.activeSidebar.laserDefenderSidebar {
-  background: #9c7d4d80;
+  background: #000;
 }
 
 .sidebarGame.activeSidebar.laserDefenderSidebar:before {
   background: #9c7d4d;
+}
+
+.animations-list li{
+  margin: 7px 0;
 }
 
 .sidebar {
@@ -436,7 +464,7 @@ body::-webkit-scrollbar-thumb
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  width: 45%;
+  width: 25%;
   height: 100%;
   -webkit-transform: translateX(-110%);
   -ms-transform: translateX(-110%);
@@ -461,13 +489,12 @@ body::-webkit-scrollbar-thumb
 .button_toggle span {
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 6px;
   background: black;
   margin-top: 12px;
   -webkit-transition: all 0.1s;
   -o-transition: all 0.1s;
   transition: all 0.1s;
-  background: white;
 }
 input[type="checkbox"] {
   position: absolute;
@@ -495,12 +522,12 @@ input[type="checkbox"]:checked+span:before {
   content: "";
   position: absolute;
   width: 40px;
-  height: 2px;
+  height: 6px;
   background: black;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  background: white;
+  background: black;
 }
 .button_toggle span:before {
   top: 12px;
@@ -524,13 +551,21 @@ input[type="checkbox"]:checked+span:before {
   margin: 0;
 }
 
+ul{
+  list-style-type: none;
+}
+
+a:hover{
+  color: #91cece;
+}
+
 .owl-theme .owl-dots .owl-dot.active span {
-  background: #989898;
+  background: #ffac3e;
   position: relative;
 }
 
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: #989898;
+  background: #ffac3e;
   position: relative;
 }
 
@@ -605,6 +640,11 @@ input[type="checkbox"]:checked+span:before {
 }
 
 @media screen and (max-width: 1051px) {
+
+  .sidebar {
+    width: 45%;
+  }
+
   .project .header .text .aboveHead {
     font-size: 14px;
   }

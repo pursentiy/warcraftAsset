@@ -56,7 +56,7 @@
             </div>
         </div>
 
-    </div>
+        </div>
 
     <div class="project">
         <section class="bio">
@@ -104,16 +104,28 @@
                     <div class="hr"></div>
                     <p class="title">Flying shooter</p>
 
-                    <div style="height:20px; width: 960px; background: green;" onclick="unityInstance.SetFullscreen(1)"><b>Click here to make it full screen.</b></div>
-                    <div class="unityBuild"></div>
-                    <iframe src="build/index.html" style="border:0px #000000 none;" name="Game name" scrolling="no" frameborder="1" marginheight="px" marginwidth="320px" height="320px" width="840px"></iframe>
+                    <div id="unity-container" class="unity-desktop">
+                        <canvas id="unity-canvas" width="1200" height="750" style="width: 960px; height: 600px; cursor: default;"></canvas>
+                        <div id="unity-loading-bar" style="display: none;">
+                          <div id="unity-logo"></div>
+                          <div id="unity-progress-bar-empty">
+                            <div id="unity-progress-bar-full" style="width: 100%;"></div>
+                          </div>
+                        </div>
+                        <div id="unity-warning"> </div>
+                        <div id="unity-footer">
+                          <div id="unity-webgl-logo"></div>
+                          <div id="unity-fullscreen-button"></div>
+                          <div id="unity-build-title">AssetsDemoProject</div>
+                        </div>
+                      </div>
 
                     <div class="text">
                         Great project to begin my studying with. I've covered all basics of Unity.
                     </div>
                 </div>
                 <div class="media vertical">
-                    <div class="photo">
+                    <!-- <div class="photo">
                     
                         <div id="owl-demo-gallery" class="owl-carousel owl-theme owl-loaded owl-drag">
                             <div class="galClick photo">
@@ -126,32 +138,24 @@
                                 <img class="sizewr" src="img/laserDefender4.png" />
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="video">
+                    <!-- <div class="video">
                         <video controls width="100%" height="100%" poster="img/laserDefender3.png">
                             <source src="video/laserDefender.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
 
     </div>
 
-</script><script src="build/Build/BUilds.loader.js"></script>
-  
-<script src="Build/UnityLoader.js"></script>
-<script>var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebHalt.json");</script>
-<div class="webgl-content">
-    <div id="gameContainer" style="width: 960px; height: 600px"></div>
-</div>
-
     <script src="libs/jquery/jquery.min.js"></script>
     <script src="libs/OwlCarousel/owl.carousel.min.js"> </script>
     <script src="js/main.js"></script>
-
+    <script src="js/unity.js"></script>
 </body>
 
 

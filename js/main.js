@@ -74,7 +74,6 @@ $(document).ready(function () {
         for (let i = 0; i < gamesDiv.length; i++) {
             let gamePos = $(gamesDiv[i]).position();
             gameHeightArr.push(gamesDiv[i].clientHeight);
-            console.log("Game " + i + ", position is: " + gamePos.top, ", height is: " + $(gamesDiv[i]).height());
             gamePosArr.push(gamePos.top);
         }
     }
@@ -89,9 +88,7 @@ $(document).ready(function () {
 
     function SetSideBarGame(offset) {
         let focusHeight = $(window).height() * 3 / 4;
-        console.log("Offset is" + offset);
         let gameIndex = GetSidebarIndex(currentScrollPosition, focusHeight);
-        console.log("Current index is :" + gameIndex);
 
 
         if (currentScrollPosition < gamePosArr[0] - gameHeightArr[0] / 2) {
@@ -184,16 +181,13 @@ $(document).ready(function () {
     window.onscroll = function () {
         let scroll = $(window).scrollTop() + 25;
         if (currentScrollPosition > scroll) {
-            //this.console.log("Up")
             scrollingDown = false;
         }
         else {
-            //this.console.log("Down")
             scrollingDown = true;
         }
         SetSideBarGame(document.documentElement.scrollTop);
         currentScrollPosition = scroll;
-        console.log(currentScrollPosition);
     }
 
     $(window).resize(function () {

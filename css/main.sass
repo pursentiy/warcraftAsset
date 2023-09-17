@@ -1,0 +1,724 @@
+$paddingBigScreenRight: 100px
+$paddingBigScreenLeft: 300px
+
+$bowlingMaster: #9c9a88
+$zombieRunner: #000000
+$projectBoost: #fff07c
+$argonAssault: #7676c5
+$realmRush: #01477c
+$laserDefender: #9c7d4d
+$glitchGarden: #9fa92c
+$tilevania: #089441
+$grey: #989898
+$heroClicker: #ffca99
+$RPG: #25511a
+
+a
+  &:hover
+  cursor: pointer
+  &:visited, &:link, &:hover, &:active
+  text-decoration: none
+
+p
+  margin-block-start: 0em
+  margin-block-end: 0em
+
+.hr
+    margin-block-start: 0em
+    margin-block-end: 0em
+    width: 25px
+    margin: 0
+    height: 3px
+    background: #fff
+
+.button_toggle
+  display: none
+
+@font-face
+  font-family: "Mon"
+  src : url("../fonts/Montserrat-Black.ttf")
+
+@font-face
+  font-family: "MonL"
+  src : url("../fonts/Montserrat-Regular.ttf")
+
+@font-face
+  font-family: "MonExL"
+  src : url("../fonts/Montserrat-Light.ttf")
+
+body
+  margin: 0
+  padding: 0
+  font-size: 14px
+  font-family: Mon
+
+.sidebar
+  width: 270px
+  position: fixed
+  height: 100%
+  background: rgba(0,0,0,.5)
+  z-index: 2
+  color: #ffffff
+  .header
+    font-family: MonL
+    padding: 40px 0 10px 30px
+    text-transform: uppercase
+  .projects
+    display: flex
+    flex-direction: column
+    .sidebarGame
+      padding: 15px 30px 
+      position: relative
+      transition: all .5s ease
+      &:before
+        content: ""
+        position: absolute
+        left: 0
+        top: 0
+        background: #fff
+      &:hover
+        cursor: pointer
+        background: $grey
+        &:before
+          background: #fff !important
+        p
+          color: #fff !important
+      p
+        color: #989898
+
+.sidebarGame.activeSidebar
+  background: #ffffff4d
+  p
+    color: #fff !important
+  &:before
+    height: 100%
+    width: 5px
+
+.project
+  .header
+    padding: 100px 0
+    position: relative
+    color: #fff
+    .gradient
+      position: absolute
+      top: 0
+      right: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(rgba(0,0,0,0) -30%,#181818)
+    .text
+      position: relative
+      .aboveHead
+        text-align: center
+        font-family: MonL
+        font-size: 19px
+      .head
+        text-align: center
+        font-size: 54px
+        margin-top: 10px
+
+.mainContent
+  padding: 0
+  padding-left: $paddingBigScreenLeft
+  padding-right: $paddingBigScreenRight
+  background: #181818
+  color: #fff
+  padding-bottom: 100px
+  .description
+    .title
+      font-family: MonL
+      font-size: 25px
+      margin: 15px 0 25px 0
+    .text
+      font-family: MonExL
+      font-size: 17px
+      line-height: 24px
+      margin: 0
+      padding-bottom: 20px
+      
+
+.bio
+  .header
+    background: url(../img/bio.jpg) no-repeat 50% 30%
+    background-size: cover
+  .mainContent
+    padding-bottom: 100px !important
+    padding-left: 0 !important
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    .media
+      width: 35%
+      margin: 15px 0px 0 30px
+      display: flex
+      align-content: center
+      .photo
+        margin-left: 14px !important
+        width: 471px !important
+        img
+          width: 100% !important
+  .description
+    padding-left: $paddingBigScreenLeft
+    width: 45%
+    margin: 0
+    .text
+      width: 100%
+      margin: 0 auto
+
+.game
+  .header
+    .text
+      padding: 0 $paddingBigScreenLeft
+      p
+        text-align: left !important
+  .mainContent
+    display: flex
+    justify-content: space-between
+    .description
+      width: 35%
+    .media
+      width: 70%
+      margin-top: 15px
+      margin-left: 30px
+      display: flex
+      flex-direction: column
+      align-content: center
+      .photo
+        width: 600px
+        img
+          width: 550px
+          display: block
+          margin: 0 auto
+      .video
+        width: 600px
+        margin-top: 30px 
+        video
+          width: 550px
+          margin: 0 auto
+          display: block
+    .vertical
+      flex-direction: row
+      .photo
+        width: 300px
+        img
+          width: 100%
+          height: 100%
+      .video
+        width: 300px
+        height: 535px
+        margin-top: 0
+        margin-left: 30px
+        position: relative
+        video
+          position: absolute
+          top: 0
+          width: 100%
+          height: 100%
+          
+.bowlingMaster
+  .header
+    background: $bowlingMaster
+  .hr
+    background: $bowlingMaster
+  .owl-theme .owl-dots .owl-dot
+    &.active span
+      background: $bowlingMaster
+    &:hover span
+      background: $bowlingMaster
+
+.sidebarGame.activeSidebar.bowlingMasterSidebar
+  background: #9c9a8880
+  &:before
+    background: $bowlingMaster
+
+.zombieRunner
+  .header
+    background: $zombieRunner
+  .hr
+    background: $zombieRunner
+  .owl-theme .owl-dots .owl-dot
+    &.active span
+      background: $zombieRunner
+    &:hover span
+      background: $zombieRunner
+
+.sidebarGame.activeSidebar.zombieRunnerSidebar
+  background: #00000080
+  &:before
+    background: #fff
+
+.projectBoost
+  .header
+    background: $projectBoost
+  .hr
+    background: $projectBoost
+  .owl-theme .owl-dots .owl-dot
+    &.active span
+      background: $projectBoost
+    &:hover span
+      background: $projectBoost
+
+.sidebarGame.activeSidebar.projectBoostSidebar
+  background: #fff07c80
+  &:before
+    background: $projectBoost
+
+.argonAssault
+  .header
+    background: $argonAssault
+  .hr
+    background: $argonAssault
+  .owl-theme .owl-dots .owl-dot
+    &.active span
+      background: $argonAssault
+    &:hover span
+      background: $argonAssault
+
+.sidebarGame.activeSidebar.argonAssaultSidebar
+  background: #7676c580
+  &:before
+    background: $argonAssault
+
+.realmRush
+  .header
+    background: $realmRush
+  .hr
+    background: $realmRush
+  .owl-theme .owl-dots .owl-dot
+    &.active span
+      background: $realmRush
+    &:hover span
+      background: $realmRush
+
+.sidebarGame.activeSidebar.realmRushSidebar
+  background: #01477c80
+  &:before
+    background: $realmRush
+
+.laserDefender
+  .header
+    background: $laserDefender
+  .hr
+    background: $laserDefender
+  .owl-theme .owl-dots .owl-dot
+    &.active span
+      background: $laserDefender
+    &:hover span
+      background: $laserDefender
+
+.sidebarGame.activeSidebar.laserDefenderSidebar
+  background: #9c7d4d80
+  &:before
+    background: $laserDefender
+
+.glitchGarden
+  .header
+    background: $glitchGarden 
+  .hr
+    background: $glitchGarden 
+  .owl-theme .owl-dots .owl-dot
+    &.active span
+      background: $glitchGarden 
+    &:hover span
+      background: $glitchGarden 
+
+.sidebarGame.activeSidebar.glitchGardenSidebar
+  background: #9fa92c80
+  &:before
+    background: $glitchGarden
+
+.tilevania
+  .header
+    background: $tilevania
+  .hr
+    background: $tilevania
+  .owl-theme .owl-dots .owl-dot
+    &.active span
+      background: $tilevania
+    &:hover span
+      background: $tilevania
+
+.sidebarGame.activeSidebar.tilevaniaSidebar
+  background: #08944180
+  &:before
+    background: $tilevania
+
+.RPG
+  .header
+    background: $RPG
+  .hr
+    background: $RPG
+  .owl-theme .owl-dots .owl-dot
+    &.active span
+      background: $RPG
+    &:hover span
+      background: $RPG
+
+.sidebarGame.activeSidebar.RPGSidebar
+  background: #25511a80
+  &:before
+    background: $RPG
+
+.heroClicker
+  .header
+    background: $heroClicker
+  .hr
+    background: $heroClicker
+  .owl-theme .owl-dots .owl-dot
+    &.active span
+      background: $heroClicker
+    &:hover span
+      background: $heroClicker
+
+.sidebarGame.activeSidebar.heroClickerSidebar
+  background: #ffca9980
+  &:before
+    background: $heroClicker
+
+.owl-theme .owl-dots .owl-dot
+  span
+    width: 25px
+    height: 3px
+    background: transparent
+    border-radius: 0
+    border: none
+    background: #fff
+    margin: 0
+  &.active span
+    background: $grey
+    position: relative
+
+.owl-theme .owl-dots .owl-dot:hover span
+  background: $grey
+  position: relative
+
+
+.owl-theme .owl-nav.disabled + .owl-dots
+  margin-top: 20px
+
+@media screen and (max-width: 1300px)
+
+  .game
+    .mainContent
+      flex-direction: column
+      .description
+        width: 600px
+    .media
+      margin-left: 0 !important
+      .photo
+        width: 550px !important
+      .video
+        margin-top: 30px !important
+        margin-left: 0 !important
+        video
+          margin: 0 !important
+    .vertical
+      flex-direction: column !important
+      flex-wrap: wrap
+      align-items: flex-start !important
+      align-content: baseline !important
+      .photo
+        width: 300px !important
+      .video
+        width: 300px
+        height: 535px !important
+
+  .bio .mainContent
+    align-content: baseline !important
+    align-items: flex-start !important
+    flex-direction: column !important
+    .description 
+      width: 600px !important
+    .media
+      margin-left: 0 !important
+      padding-left: 300px
+      .photo
+        margin-left: 0 !important
+
+
+
+@media screen and (max-width: 1051px)
+
+  .project .header .text
+    .aboveHead
+      font-size: 14px
+    .head
+      font-size: 40px
+
+  .bio
+    .mainContent
+      .description
+        padding-left: 150px
+        .title
+          font-size: 18px
+        .text
+          font-size: 15px
+
+  .game
+    .header
+       .text
+         padding: 0 150px
+    .mainContent
+      padding-left: 150px
+      .description
+        .title
+          font-size: 18px
+  
+  .sidebar
+    display: block
+    list-style: none
+    position: fixed
+    top: 0
+    left: 0
+    background: rgba(0, 0, 0, 0.5)
+    width: 45%
+    height: 100%
+    transform: translateX(-110%)
+    transition: transform 0.6s ease
+    z-index: 100
+
+  .button_toggle
+    display: block
+    position: fixed
+    width: 40px
+    height: 36px
+    right: 30px
+    top: 35px
+    background: transparent
+    z-index: 321
+    span
+      position: absolute
+      width: 100%
+      height: 2px
+      background: black
+      margin-top: 12px
+      transition: all 0.1s
+      background: white
+  input[type="checkbox"]
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 1
+    opacity: 0
+    cursor: pointer
+    margin-top: 0px
+    &:checked + span
+      background: transparent
+      &:after
+        transform: rotate(-45deg) translate(-4px, 16px)
+      &:before
+        transform: rotate(45deg) translate(-1px, -12px)
+  .button_toggle span
+    &:before, &:after
+      content: ""
+      position: absolute
+      width: 40px
+      height: 2px
+      background: black
+      transition: all 0.3s
+      background: white
+    &:before
+      top: 12px
+    &:after
+      top: -12px
+
+  .scroll
+    transform: translateX(0%)
+
+  .bio .mainContent
+    .media
+      margin-left: 0 !important
+      padding-left: 150px
+
+@media screen and (max-width: 800px)
+
+  .project .header .text
+    .aboveHead
+      font-size: 12px
+    .head
+      font-size: 30px
+
+  .bio
+    .mainContent
+      .description
+        padding-left: 50px
+        .title
+          font-size: 15px
+
+  .game
+    .header
+       .text
+         padding: 0 50px
+    .mainContent
+      padding-left: 50px
+      .description
+        .title
+          font-size: 15px
+
+  .bio .mainContent
+    .media
+      margin-left: 0 !important
+      padding-left: 50px
+
+@media screen and (max-width: 700px)
+
+  .project .header .text
+    .aboveHead
+      font-size: 11px
+    .head
+      font-size: 30px
+
+  .bio
+    .mainContent
+      .description
+        width: 90%
+        padding-left: 30px
+        .title
+          font-size: 13px
+
+  .game
+    .header
+       .text
+         padding: 0 30px
+    .mainContent
+      padding-left: 30px
+      .description
+        .title
+          font-size: 13px
+
+@media screen and (max-width: 700px)
+
+  .project .header .text
+    .aboveHead
+      font-size: 11px
+      text-align: 0 
+      padding-left: 0
+      text-align: center !important
+    .head
+      font-size: 30px
+      text-align: center !important 
+      padding-left: 0
+
+  .bio
+    .mainContent
+      .description
+        width: 500px
+        padding-left: 0px
+        margin: 0 auto
+        .title
+          font-size: 14px !important
+        .text
+          font-size: 11px !important
+
+  .game
+    .header
+       .text
+         padding: 0 30px
+    .mainContent
+      padding-left: 0 !important
+      padding-right: 0 !important
+      justify-content: center
+      align-items: center
+      .description
+        width: 500px !important
+        margin: 0 auto
+        padding-left: 0
+        .title
+          font-size: 14px !important
+        .text
+          font-size: 11px !important
+      .media
+        width: auto
+        .photo
+          width: 400px !important
+          img
+            width: 400px
+        .video
+          width: 400px !important
+          video
+            width: 400px !important
+
+  .bio .media
+    display: none !important
+
+  .bio .mainContent
+    padding-right: 0 !important
+    .description 
+      width: 500px !important
+      margin: 0 auto !important
+
+@media screen and (max-width: 550px)
+
+  .bio
+    .mainContent
+      padding-bottom: 50px !important
+      .description
+        width: 400px
+
+  .game
+    .mainContent
+      padding-bottom: 50px !important
+      .description
+        width: 400px !important
+      .media
+        .photo
+          width: 300px !important
+          img
+            width: 300px
+        .video
+          width: 300px !important
+          video
+            width: 300px !important
+
+  .bio .mainContent
+    .description 
+      width: 400px !important
+
+@media screen and (max-width: 450px)
+
+  .sidebar
+    width: 60%
+
+  .bio
+    .mainContent
+      .description
+        width: 300px
+
+  .bio .mainContent
+    .description 
+      width: 300px !important
+
+  .game
+    .mainContent
+      .description
+        width: 300px !important
+
+@media screen and (max-width: 380px)
+
+  .bio
+    .mainContent
+      .description
+        width: 270px
+
+  .bio .mainContent
+    .description 
+      width: 270px !important
+
+  .game
+    .mainContent
+      .description
+        width: 270px !important
+      .media
+        .photo
+          width: 270px !important
+          img
+            width: 270px
+        .video
+          width: 270px !important
+          video
+            width: 270px !important
+
+@media screen and (orientation: landscape) and (max-width: 900px)
+
+  .sidebar 
+    overflow: scroll

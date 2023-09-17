@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VOPRIS Game Assets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta property="og:title" content="VOPRIS Assets"/>
+    <meta name="image" property="og:image" content="https://pursentiy.github.io/Games/img/Preview.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:description" content="VOPRIS Assets"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="627"/>
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" media="screen" href="css/main.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(53114020, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <meta name="theme-color" content="#181818">
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/53114020" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+
+<body >
+
+    <div class="button_toggle">
+        <input type="checkbox" id="checkbox">
+        <span class="transform"></span>
+    </div>
+
+    <div class="sidebar">
+        <div class="header">
+            <p>Navigation Panel:</p>
+        </div>
+        <div class="projects">
+            <div class="#link6 sidebarGame laserDefenderSidebar">
+                <p>Fantasy Asset Pack</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="project">
+        <section class="bio">
+            <div class="header main">
+                <div class="gradient"></div>
+                <div class="logo">
+                    <img src="img/Logo.png" alt="">
+                    <p>Vopris</p>
+                </div>
+            </div>
+            <div class="mainContent">
+                <div class="description">
+                    <div class="hr"></div>
+                    <p class="title">Some words about us</p>
+                    <div class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <br>
+                        <p class="title">Links:</p>
+                        - <a href="https://www.udemy.com/course/unitycourse/">Our Email</a>
+                        <br>
+                        <br>
+                        - <a href="https://www.udemy.com/course/unitycourse2/">Our telegram</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="box">
+            <div class="box-sm red"></div>
+            <div class="box-sm orange"></div>
+            <div class="box-sm yellow "></div>
+            <div class="box-sm green "></div>
+        </div>
+
+        <section id="link6" class="game laserDefender">
+            <div class="header">
+                <div class="gradient"></div>
+                <div class="text">
+                    <p class="aboveHead">2D games made in Unity</p>
+                    <p class="head">Laser Defender</p>
+                </div>
+            </div>
+            <div class="mainContent">
+                <div class="description">
+                    <div class="hr"></div>
+                    <p class="title">Flying shooter</p>
+
+                    <div style="height:20px; width: 960px; background: green;" onclick="unityInstance.SetFullscreen(1)"><b>Click here to make it full screen.</b></div>
+                    <div class="unityBuild"></div>
+                    <iframe src="build/index.html" style="border:0px #000000 none;" name="Game name" scrolling="no" frameborder="1" marginheight="px" marginwidth="320px" height="320px" width="840px"></iframe>
+
+                    <div class="text">
+                        Great project to begin my studying with. I've covered all basics of Unity.
+                    </div>
+                </div>
+                <div class="media vertical">
+                    <div class="photo">
+                    
+                        <div id="owl-demo-gallery" class="owl-carousel owl-theme owl-loaded owl-drag">
+                            <div class="galClick photo">
+                                <img class="sizewr" src="img/laserDefender1.png" />
+                            </div>
+                            <div class="galClick photo">
+                                <img class="sizewr" src="img/laserDefender2.png" />
+                            </div>
+                            <div class="galClick photo">
+                                <img class="sizewr" src="img/laserDefender4.png" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video">
+                        <video controls width="100%" height="100%" poster="img/laserDefender3.png">
+                            <source src="video/laserDefender.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</script><script src="build/Build/BUilds.loader.js"></script>
+  
+<script src="Build/UnityLoader.js"></script>
+<script>var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebHalt.json");</script>
+<div class="webgl-content">
+    <div id="gameContainer" style="width: 960px; height: 600px"></div>
+</div>
+
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/OwlCarousel/owl.carousel.min.js"> </script>
+    <script src="js/main.js"></script>
+
+</body>
+
+
+</html>

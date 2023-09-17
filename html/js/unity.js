@@ -29,11 +29,11 @@ var container = document.querySelector("#unity-container");
         updateBannerVisibility();
       }
 
-      var loaderUrl = "../build/Build/BUilds.loader.js";
+      var loaderUrl = "../build/Build/FreshBuild.loader.js";
       var config = {
-        dataUrl: "../build/Build/BUilds.data.unityweb",
-        frameworkUrl: "../build/Build/BUilds.framework.js.unityweb",
-        codeUrl: "../build/Build/BUilds.wasm.unityweb",
+        dataUrl: "../build/Build/FreshBuild.data.unityweb",
+        frameworkUrl: "../build/Build/FreshBuild.framework.js.unityweb",
+        codeUrl: "../build/Build/FreshBuild.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "AssetsDemoProject",

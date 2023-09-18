@@ -28,7 +28,7 @@ p {
 
 @font-face {
   font-family: "Arcade";
-  src: url("../fonts/ARCADECLASSIC.TTF");
+  src: url("../fonts/Minecraftia-Regular.ttf");
 }
 
 a{
@@ -84,13 +84,14 @@ body::-webkit-scrollbar-thumb
   float: right;
   width: 30px;
   height: 30px;
+  cursor: pointer;
   background: url(../img/full-screen.png) no-repeat center;
   -webkit-background-size: contain;
           background-size: contain;
 }
 
 #unity-canvas{
-  background-color: red;
+  background-color: #314c78;
 }
 
 .sidebar::-webkit-scrollbar-thumb
@@ -122,9 +123,8 @@ body::-webkit-scrollbar-thumb
 
 .sidebar .header {
   font-family: Arcade;
-  padding: 40px 0 10px 30px;
-  text-transform: uppercase;
-  font-size: 30px;
+  padding: 40px 15px 10px 30px;
+  font-size: 25px;
 }
 
 .sidebar .projects {
@@ -156,7 +156,7 @@ body::-webkit-scrollbar-thumb
 
 .sidebar .projects .sidebarGame:hover {
   cursor: pointer;
-  background: #ffac3e;
+  background: #78c5bd;
 }
 
 .sidebar .projects .sidebarGame:hover:before {
@@ -169,6 +169,7 @@ body::-webkit-scrollbar-thumb
 
 .sidebar .projects .sidebarGame p {
   color: #000;
+  height: 37px;
 }
 
 .sidebarGame.activeSidebar {
@@ -189,7 +190,7 @@ body::-webkit-scrollbar-thumb
   flex-direction: row;
   justify-content: end;
   align-content: center;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 #unity-fullscreen-block p{
@@ -231,9 +232,23 @@ body::-webkit-scrollbar-thumb
 
 .project .header.main .logo p{
   text-transform: uppercase;
-  font-size: 60px;
-  text-decoration: underline;
+  font-size: 45px;
+  text-align: center;
   color: #000;
+}
+
+.project .header.main .logo p:after{
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 5px;
+  bottom: 5px;
+  left: 5px;
+  background: black;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  background: black;
 }
 
 .project .header.main{
@@ -293,7 +308,6 @@ body::-webkit-scrollbar-thumb
   font-size: 30px;
   line-height: 24px;
   margin: 0;
-  padding-bottom: 20px;
 }
 
 .bio .mainContent {
@@ -321,12 +335,12 @@ body::-webkit-scrollbar-thumb
   align-content: center;
 }
 
-.bio .mainContent .media .photo {
+.bio .mainContent .media .photos {
   margin-left: 14px !important;
   width: 471px !important;
 }
 
-.bio .mainContent .media .photo img {
+.bio .mainContent .media .photos img {
   width: 100% !important;
 }
 
@@ -350,52 +364,38 @@ body::-webkit-scrollbar-thumb
 }
 
 .game .mainContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .game .mainContent .description {
-  width: 75%;
+  width: 100%;
 }
 
 .game .mainContent .media {
-  width: 70%;
-  margin-top: 15px;
-  margin-left: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: 100%;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-line-pack: center;
-  align-content: center;
+  flex-direction: row;
+  align-content: space-between;
+  margin: 10px auto;
 }
 
-.game .mainContent .media .photo {
-  width: 600px;
+.game .mainContent .media .photos {
+  width: 450px;
+  margin: 0 25px 0 0;
 }
 
-.game .mainContent .media .photo img {
-  width: 550px;
+.game .mainContent .media .photos img {
+  width: 100%;
   display: block;
   margin: 0 auto;
 }
 
 .game .mainContent .media .video {
-  width: 600px;
-  margin-top: 30px;
-}
-
-.game .mainContent .media .video video {
-  width: 550px;
-  margin: 0 auto;
-  display: block;
+  width: 450px;
+  height: 253px;
+  margin: 0 0 0 25px;
 }
 
 .game .mainContent .vertical {
@@ -405,11 +405,11 @@ body::-webkit-scrollbar-thumb
   flex-direction: row;
 }
 
-.game .mainContent .vertical .photo {
+.game .mainContent .vertical .photos {
   width: 300px;
 }
 
-.game .mainContent .vertical .photo img {
+.game .mainContent .vertical .photos img {
   width: 100%;
   height: 100%;
 }
@@ -438,23 +438,23 @@ body::-webkit-scrollbar-thumb
 }
 
 .laserDefender .owl-theme .owl-dots .owl-dot.active span {
-  background: #000;
+  background: #91cece;
 }
 
 .laserDefender .owl-theme .owl-dots .owl-dot:hover span {
-  background: #000;
+  background: #91cece;
 }
 
 .sidebarGame.activeSidebar.laserDefenderSidebar {
-  background: #000;
+  background: #91cece;
 }
 
 .sidebarGame.activeSidebar.laserDefenderSidebar:before {
-  background: #9c7d4d;
+  background: #91cece;
 }
 
 .animations-list li{
-  margin: 7px 0;
+  margin-bottom: 25px;
 }
 
 .sidebar {
@@ -463,8 +463,8 @@ body::-webkit-scrollbar-thumb
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  width: 25%;
+  background: rgba(0, 0, 0, 0.15);
+  width: 24%;
   height: 100%;
   -webkit-transform: translateX(-110%);
   -ms-transform: translateX(-110%);
@@ -489,7 +489,7 @@ body::-webkit-scrollbar-thumb
 .button_toggle span {
   position: absolute;
   width: 100%;
-  height: 6px;
+  height: 5px;
   background: black;
   margin-top: 12px;
   -webkit-transition: all 0.1s;
@@ -522,7 +522,7 @@ input[type="checkbox"]:checked+span:before {
   content: "";
   position: absolute;
   width: 40px;
-  height: 6px;
+  height: 5px;
   background: black;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -573,6 +573,12 @@ a:hover{
   margin-top: 20px;
 }
 
+@media screen and (max-width: 1500px) {
+  .sidebar {
+    width: 32%;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .game .mainContent {
     -webkit-box-orient: vertical;
@@ -586,7 +592,7 @@ a:hover{
   .game .media {
     margin-left: 0 !important;
   }
-  .game .media .photo {
+  .game .media .photos {
     width: 550px !important;
   }
   .game .media .video {
@@ -609,7 +615,7 @@ a:hover{
     -ms-flex-line-pack: baseline !important;
     align-content: baseline !important;
   }
-  .game .vertical .photo {
+  .game .vertical .photos {
     width: 300px !important;
   }
   .game .vertical .video {
@@ -634,8 +640,14 @@ a:hover{
     margin-left: 0 !important;
     padding-left: 300px;
   }
-  .bio .mainContent .media .photo {
+  .bio .mainContent .media .photos {
     margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  .sidebar {
+    width: 44%;
   }
 }
 
@@ -673,6 +685,12 @@ a:hover{
   .bio .mainContent .media {
     margin-left: 0 !important;
     padding-left: 150px;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .sidebar {
+    width: 70%;
   }
 }
 
@@ -779,10 +797,10 @@ a:hover{
   .game .mainContent .media {
     width: auto;
   }
-  .game .mainContent .media .photo {
+  .game .mainContent .media .photos {
     width: 400px !important;
   }
-  .game .mainContent .media .photo img {
+  .game .mainContent .media .photos img {
     width: 400px;
   }
   .game .mainContent .media .video {
@@ -816,10 +834,10 @@ a:hover{
   .game .mainContent .description {
     width: 400px !important;
   }
-  .game .mainContent .media .photo {
+  .game .mainContent .media .photos {
     width: 300px !important;
   }
-  .game .mainContent .media .photo img {
+  .game .mainContent .media .photos img {
     width: 300px;
   }
   .game .mainContent .media .video {
@@ -831,12 +849,17 @@ a:hover{
   .bio .mainContent .description {
     width: 400px !important;
   }
+
+  .sidebar .header {
+    font-size: 15px;
+  }
+
+  .sidebar .projects .sidebarGame{
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 450px) {
-  .sidebar {
-    width: 60%;
-  }
   .bio .mainContent .description {
     width: 300px;
   }
@@ -858,10 +881,10 @@ a:hover{
   .game .mainContent .description {
     width: 270px !important;
   }
-  .game .mainContent .media .photo {
+  .game .mainContent .media .photos {
     width: 270px !important;
   }
-  .game .mainContent .media .photo img {
+  .game .mainContent .media .photos img {
     width: 270px;
   }
   .game .mainContent .media .video {
@@ -869,6 +892,13 @@ a:hover{
   }
   .game .mainContent .media .video video {
     width: 270px !important;
+  }
+  .sidebar .header {
+    font-size: 12px;
+  }
+
+  .sidebar .projects .sidebarGame{
+    font-size: 12px;
   }
 }
 
@@ -951,4 +981,14 @@ a:hover{
 
 .purple {
   background-color: #383856;
+}
+
+footer div{
+  background: linear-gradient(rgb(131, 178, 183)-10%, rgb(120, 197, 189) );
+  padding: 35px 0;
+}
+
+footer div p{
+  font-size: 25px;
+  text-align: center;
 }

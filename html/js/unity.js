@@ -49,7 +49,10 @@
       // the canvas DOM size and WebGL render target sizes yourself.
       // config.matchWebGLToCanvasSize = false;
 
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      var width = "950px";
+      var height = "480px";
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.screen.width <= 950) {
         container.className = "unity-mobile";
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
@@ -57,10 +60,10 @@
         unityShowBanner('WebGL builds are not supported on mobile devices.');
         fullScreenBlock.style = "display: none";
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = width;
+        canvas.style.height = height;
 
-        container.style = "width: 960px; height: 600px; padding: 70px 0 70px 0"
+        container.style = "width: " + width + "; height: " + height + "; margin: 25px 0 70px 0"
       }
       loadingBar.style.display = "block";
 

@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web-restart:
+    image: nginx:latest
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
+      - ./nginx-rewrite.conf:/etc/nginx/nginx.conf

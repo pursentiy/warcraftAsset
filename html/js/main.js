@@ -57,10 +57,6 @@ $(document).ready(function () {
         return displayScroll;
     }
 
-    $(window).resize(function () {
-        setTimeout(function () { settingCss() }, 1000);
-    });
-
     var gamePosArr = [];
     var gameHeightArr = [];
     var currentScrollPosition = $(window).scrollTop();

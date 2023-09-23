@@ -457,6 +457,10 @@ body::-webkit-scrollbar-thumb
   margin-bottom: 25px;
 }
 
+.packAuthorDescription{
+  margin-top: 50px;
+}
+
 .sidebar {
   display: block;
   list-style: none;
@@ -668,6 +672,7 @@ a:hover{
   }
   .bio .mainContent .description .title {
     font-size: 18px;
+    margin: 15px 0 5px 0;
   }
   .bio .mainContent .description .text {
     font-size: 15px;
@@ -680,6 +685,14 @@ a:hover{
   }
   .game .mainContent .description .title {
     font-size: 18px;
+  }
+
+  .game .mainContent .description .text{
+    font-size: 18px;
+  }
+
+  .game .mainContent .description .text .animations-list{
+    font-size: 15px;
   }
   
   .bio .mainContent .media {

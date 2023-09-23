@@ -93,6 +93,10 @@ body::-webkit-scrollbar-thumb
 #unity-canvas{
   background-color: #314c78;
 }
+#unity-container{
+  max-width: 950px;
+  margin: 25px 10px 70px 10px
+}
 
 .sidebar::-webkit-scrollbar-thumb
 {
@@ -306,7 +310,7 @@ body::-webkit-scrollbar-thumb
 .mainContent .description .text {
   font-family: Arcade;
   font-size: 30px;
-  line-height: 24px;
+  /* line-height: 24px; */
   margin: 0;
 }
 
@@ -379,11 +383,13 @@ body::-webkit-scrollbar-thumb
   flex-direction: row;
   align-content: space-between;
   margin: 10px auto;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 .game .mainContent .media .photos {
   width: 450px;
-  margin: 0 25px 0 0;
+  /* margin: 0 25px 0 0; */
 }
 
 .game .mainContent .media .photos img {
@@ -393,9 +399,9 @@ body::-webkit-scrollbar-thumb
 }
 
 .game .mainContent .media .video {
-  width: 450px;
-  height: 253px;
-  margin: 0 0 0 25px;
+  min-width: 450px;
+  min-height: 250px;
+  /* margin: 0 0 0 25px; */
 }
 
 .game .mainContent .vertical {
@@ -597,7 +603,7 @@ a:hover{
     margin-left: 0 !important;
   }
   .game .media .photos {
-    width: 550px !important;
+    max-width: 550px !important;
   }
   .game .media .video {
     margin-top: 30px !important;

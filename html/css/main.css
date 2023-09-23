@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 a {
   cursor: pointer;
   text-decoration: none;
@@ -31,13 +38,13 @@ p {
   src: url("../fonts/Minecraftia-Regular.ttf");
 }
 
-a{
-  color:#000;
+a {
+  color: #000;
   cursor: pointer;
 }
 
-a:hover{
- font-weight: bold;
+a:hover {
+  font-weight: bold;
 }
 
 body {
@@ -47,63 +54,58 @@ body {
   font-family: Mon;
 }
 
-body::-webkit-scrollbar-track
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-body::-webkit-scrollbar
-{
-    width: 12px;
-    background-color: #000;
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #000;
 }
 
-body::-webkit-scrollbar-thumb
-{
-    border-radius: 10px;
-    height: 100px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #181818;
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  height: 100px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #181818;
 }
 
-.sidebar::-webkit-scrollbar-track
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.089);
+.sidebar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.089);
 }
 
-.sidebar::-webkit-scrollbar
-{
-    width: 12px;
-    background-color: rgba(0, 0, 0, 0);
+.sidebar::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgba(0, 0, 0, 0);
 }
-#unity-fullscreen-button{
+
+#unity-fullscreen-button {
   float: right;
   width: 30px;
   height: 30px;
   cursor: pointer;
   background: url(../img/full-screen.png) no-repeat center;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
 }
 
-#unity-canvas{
+#unity-canvas {
   background-color: #314c78;
 }
-#unity-container{
+
+#unity-container {
   max-width: 950px;
-  margin: 25px 10px 70px 10px
+  margin: 25px 0px 70px 0px
 }
 
-.sidebar::-webkit-scrollbar-thumb
-{
-    border-radius: 10px;
-    height: 50px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #1818181f;
+.sidebar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  height: 50px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #1818181f;
 }
 
 .sidebar {
@@ -121,8 +123,10 @@ body::-webkit-scrollbar-thumb
 }
 
 .sidebar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .sidebar .header {
@@ -166,6 +170,7 @@ body::-webkit-scrollbar-thumb
 .sidebar .projects .sidebarGame:hover:before {
   background: #fff !important;
 }
+
 /* 
 .sidebar .projects .sidebarGame:hover p {
   color: #fff !important;
@@ -189,31 +194,41 @@ body::-webkit-scrollbar-thumb
   width: 5px;
 }
 
-#unity-fullscreen-block{
+#unity-fullscreen-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: end;
-  align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-line-pack: center;
+      align-content: center;
   margin-top: 25px;
 }
 
-#unity-fullscreen-block p{
+#unity-fullscreen-block p {
   font-size: 25px;
-  line-height:35px;
+  line-height: 35px;
+  margin-top: 5px;
 }
 
-#unity-fullscreen-button{
+#unity-fullscreen-button {
   margin-left: 15px;
 }
 
 .project .header {
   padding: 100px 0;
   position: relative;
+  background-color: #74b8bb;
 }
 
-.project .header.main .logo{
-  width: 200px;
-  height: 272px;
+.project .header.main .logo {
+  width: 800px;
+  height: 251px;
   margin: 0 auto;
   position: relative;
   top: 0;
@@ -230,18 +245,18 @@ body::-webkit-scrollbar-thumb
   flex-direction: column;
 }
 
-.project .header.main .logo img{
+.project .header.main .logo img {
   width: 100%;
 }
 
-.project .header.main .logo p{
+.project .header.main .logo p {
   text-transform: uppercase;
   font-size: 45px;
   text-align: center;
   color: #000;
 }
 
-.project .header.main .logo p:after{
+.project .header.main .logo p:after {
   content: "";
   position: absolute;
   width: 190px;
@@ -255,8 +270,8 @@ body::-webkit-scrollbar-thumb
   background: black;
 }
 
-.project .header.main{
-  padding: 60px 0;
+.project .header.main {
+  padding: 150px 0;
 }
 
 .project .header .gradient {
@@ -265,9 +280,9 @@ body::-webkit-scrollbar-thumb
   right: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(-30%, #78C5BD), to(#83B2B7));
-  background: -o-linear-gradient(#78C5BD -30%, #83B2B7);
-  background: linear-gradient(#78C5BD -30%, #83B2B7);
+  background: -o-linear-gradient(#83B2B7 -30%, #74b8bb);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-30%, #83B2B7), to(#74b8bb));
+  background: linear-gradient(#83B2B7 -30%, #74b8bb);
 }
 
 .project .header .text {
@@ -290,7 +305,7 @@ body::-webkit-scrollbar-thumb
   padding: 0;
   padding-left: 300px;
   padding-right: 100px;
-  background: #83B2B7;
+  background: #74b8bb;
   color: #000;
   padding-bottom: 100px;
 }
@@ -301,7 +316,7 @@ body::-webkit-scrollbar-thumb
   margin: 15px 0 25px 0;
 }
 
-.mainContent .description .unityBuild{
+.mainContent .description .unityBuild {
   display: block;
   width: 960px;
   height: 600px;
@@ -368,9 +383,16 @@ body::-webkit-scrollbar-thumb
 }
 
 .game .mainContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .game .mainContent .description {
@@ -379,11 +401,18 @@ body::-webkit-scrollbar-thumb
 
 .game .mainContent .media {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   margin: 10px auto;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 50px;
 }
 
@@ -399,9 +428,8 @@ body::-webkit-scrollbar-thumb
 }
 
 .game .mainContent .media .video {
-  min-width: 450px;
-  min-height: 250px;
-  /* margin: 0 0 0 25px; */
+  width: 450px;
+  height: 253px;
 }
 
 .game .mainContent .vertical {
@@ -459,11 +487,11 @@ body::-webkit-scrollbar-thumb
   background: #91cece;
 }
 
-.animations-list li{
+.animations-list li {
   margin-bottom: 25px;
 }
 
-.packAuthorDescription{
+.packAuthorDescription {
   margin-top: 50px;
 }
 
@@ -478,7 +506,7 @@ body::-webkit-scrollbar-thumb
   height: 100%;
   -webkit-transform: translateX(-110%);
   -ms-transform: translateX(-110%);
-      transform: translateX(-110%);
+  transform: translateX(-110%);
   -webkit-transition: -webkit-transform 0.6s ease;
   transition: -webkit-transform 0.6s ease;
   -o-transition: transform 0.6s ease;
@@ -486,6 +514,7 @@ body::-webkit-scrollbar-thumb
   transition: transform 0.6s ease, -webkit-transform 0.6s ease;
   z-index: 100;
 }
+
 .button_toggle {
   display: block;
   position: fixed;
@@ -496,6 +525,7 @@ body::-webkit-scrollbar-thumb
   background: transparent;
   z-index: 321;
 }
+
 .button_toggle span {
   position: absolute;
   width: 100%;
@@ -506,6 +536,7 @@ body::-webkit-scrollbar-thumb
   -o-transition: all 0.1s;
   transition: all 0.1s;
 }
+
 input[type="checkbox"] {
   position: absolute;
   width: 100%;
@@ -515,19 +546,23 @@ input[type="checkbox"] {
   cursor: pointer;
   margin-top: 0px;
 }
+
 input[type="checkbox"]:checked+span {
   background: transparent;
 }
+
 input[type="checkbox"]:checked+span:after {
   -webkit-transform: rotate(-45deg) translate(-4px, 16px);
   -ms-transform: rotate(-45deg) translate(-4px, 16px);
-      transform: rotate(-45deg) translate(-4px, 16px);
+  transform: rotate(-45deg) translate(-4px, 16px);
 }
+
 input[type="checkbox"]:checked+span:before {
   -webkit-transform: rotate(45deg) translate(-1px, -12px);
   -ms-transform: rotate(45deg) translate(-1px, -12px);
-      transform: rotate(45deg) translate(-1px, -12px);
+  transform: rotate(45deg) translate(-1px, -12px);
 }
+
 .button_toggle span:before, .button_toggle span:after {
   content: "";
   position: absolute;
@@ -539,16 +574,19 @@ input[type="checkbox"]:checked+span:before {
   transition: all 0.3s;
   background: black;
 }
+
 .button_toggle span:before {
   top: 12px;
 }
+
 .button_toggle span:after {
   top: -12px;
 }
+
 .scroll {
   -webkit-transform: translateX(0%);
   -ms-transform: translateX(0%);
-      transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -561,11 +599,11 @@ input[type="checkbox"]:checked+span:before {
   margin: 0;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
-a:hover{
+a:hover {
   color: #91cece;
 }
 
@@ -596,22 +634,28 @@ a:hover{
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
   .game .mainContent .description {
     width: 600px;
   }
+
   .game .media {
     margin-left: 0 !important;
   }
+
   .game .media .photos {
     max-width: 550px !important;
   }
+
   .game .media .video {
     margin-top: 30px !important;
     margin-left: 0 !important;
   }
+
   .game .media .video video {
     margin: 0 !important;
   }
+
   .game .vertical {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -625,13 +669,16 @@ a:hover{
     -ms-flex-line-pack: baseline !important;
     align-content: baseline !important;
   }
+
   .game .vertical .photos {
     width: 300px !important;
   }
+
   .game .vertical .video {
     width: 300px;
     height: 535px !important;
   }
+
   .bio .mainContent {
     -ms-flex-line-pack: baseline !important;
     align-content: baseline !important;
@@ -643,13 +690,16 @@ a:hover{
     -ms-flex-direction: column !important;
     flex-direction: column !important;
   }
+
   .bio .mainContent .description {
     width: 600px !important;
   }
+
   .bio .mainContent .media {
     margin-left: 0 !important;
     padding-left: 300px;
   }
+
   .bio .mainContent .media .photos {
     margin-left: 0 !important;
   }
@@ -663,6 +713,10 @@ a:hover{
 
 @media screen and (max-width: 1051px) {
 
+  #unity-footer {
+    display: none;
+  }
+
   .sidebar {
     width: 45%;
   }
@@ -670,40 +724,66 @@ a:hover{
   .project .header .text .aboveHead {
     font-size: 14px;
   }
+
   .project .header .text .head {
     font-size: 40px;
   }
+
   .bio .mainContent .description {
     padding-left: 150px;
   }
+
   .bio .mainContent .description .title {
     font-size: 18px;
     margin: 15px 0 5px 0;
   }
+
   .bio .mainContent .description .text {
     font-size: 15px;
   }
+
   .game .header .text {
     padding: 0 150px;
   }
+
   .game .mainContent {
     padding-left: 150px;
   }
+
   .game .mainContent .description .title {
     font-size: 18px;
   }
 
-  .game .mainContent .description .text{
+  .game .mainContent .description .text {
     font-size: 18px;
   }
 
-  .game .mainContent .description .text .animations-list{
+  .game .mainContent .description .text .animations-list {
     font-size: 15px;
   }
-  
+
   .bio .mainContent .media {
     margin-left: 0 !important;
     padding-left: 150px;
+  }
+
+  .project .header.main .logo {}
+
+  .project .header.main .logo {
+    width: 500px;
+    height: 160px;
+  }
+
+  .project .header.main {
+    padding: 50px 0;
+  }
+
+  .project .header {
+    padding: 50px 0;
+  }
+
+  footer div p {
+    font-size: 15px !important;
   }
 }
 
@@ -717,24 +797,31 @@ a:hover{
   .project .header .text .aboveHead {
     font-size: 12px;
   }
+
   .project .header .text .head {
     font-size: 30px;
   }
+
   .bio .mainContent .description {
     padding-left: 50px;
   }
+
   .bio .mainContent .description .title {
     font-size: 15px;
   }
+
   .game .header .text {
     padding: 0 50px;
   }
+
   .game .mainContent {
     padding-left: 50px;
   }
+
   .game .mainContent .description .title {
     font-size: 15px;
   }
+
   .bio .mainContent .media {
     margin-left: 0 !important;
     padding-left: 50px;
@@ -745,53 +832,59 @@ a:hover{
   .project .header .text .aboveHead {
     font-size: 11px;
   }
+
   .project .header .text .head {
     font-size: 30px;
   }
+
   .bio .mainContent .description {
     width: 90%;
     padding-left: 30px;
   }
+
   .bio .mainContent .description .title {
     font-size: 13px;
   }
+
   .game .header .text {
     padding: 0 30px;
   }
+
   .game .mainContent {
     padding-left: 30px;
   }
-  .game .mainContent .description .title {
-    font-size: 13px;
-  }
-}
 
-@media screen and (max-width: 700px) {
   .project .header .text .aboveHead {
     font-size: 11px;
     text-align: 0;
     padding-left: 0;
     text-align: center !important;
   }
+
   .project .header .text .head {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center !important;
     padding-left: 0;
   }
+
   .bio .mainContent .description {
     width: 500px;
     padding-left: 0px;
     margin: 0 auto;
   }
+
   .bio .mainContent .description .title {
     font-size: 14px !important;
   }
+
   .bio .mainContent .description .text {
     font-size: 11px !important;
   }
+
   .game .header .text {
     padding: 0 30px;
   }
+
   .game .mainContent {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -802,69 +895,106 @@ a:hover{
     -ms-flex-align: center;
     align-items: center;
   }
+
   .game .mainContent .description {
     width: 500px !important;
     margin: 0 auto;
     padding-left: 0;
   }
+
   .game .mainContent .description .title {
+    font-size: 14px;
+  }
+
+  .game .mainContent .description .text {
     font-size: 14px !important;
   }
-  .game .mainContent .description .text {
-    font-size: 11px !important;
-  }
+
   .game .mainContent .media {
-    width: auto;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
+
   .game .mainContent .media .photos {
     width: 400px !important;
   }
+
   .game .mainContent .media .photos img {
     width: 400px;
   }
+
   .game .mainContent .media .video {
     width: 400px !important;
+    height: auto;
   }
+
   .game .mainContent .media .video video {
     width: 400px !important;
   }
+
+  .game .mainContent .description .text .animations-list {
+    font-size: 13px;
+    -webkit-padding-start: 10px;
+            padding-inline-start: 10px;
+  }
+
   .bio .media {
     display: none !important;
   }
+
   .bio .mainContent {
     padding-right: 0 !important;
   }
+
   .bio .mainContent .description {
     width: 500px !important;
     margin: 0 auto !important;
   }
+
+  footer div p {
+    font-size: 14px !important;
+  }
 }
 
 @media screen and (max-width: 550px) {
+  .project .header .text .head {
+    font-size: 20px;
+  }
+
   .bio .mainContent {
     padding-bottom: 50px !important;
   }
+
   .bio .mainContent .description {
     width: 400px;
   }
+
   .game .mainContent {
     padding-bottom: 50px !important;
   }
+
   .game .mainContent .description {
     width: 400px !important;
   }
+
   .game .mainContent .media .photos {
     width: 300px !important;
   }
+
   .game .mainContent .media .photos img {
     width: 300px;
   }
+
   .game .mainContent .media .video {
     width: 300px !important;
   }
+
   .game .mainContent .media .video video {
     width: 300px !important;
   }
+
   .bio .mainContent .description {
     width: 400px !important;
   }
@@ -873,8 +1003,21 @@ a:hover{
     font-size: 15px;
   }
 
-  .sidebar .projects .sidebarGame{
+  .sidebar .projects .sidebarGame {
     font-size: 15px;
+  }
+
+  .project .header.main .logo {
+    width: 300px;
+    height: 95px;
+  }
+
+  .project .header.main {
+    padding: 30px 0;
+  }
+
+  .project .header {
+    padding: 30px 0;
   }
 }
 
@@ -882,9 +1025,11 @@ a:hover{
   .bio .mainContent .description {
     width: 300px;
   }
+
   .bio .mainContent .description {
     width: 300px !important;
   }
+
   .game .mainContent .description {
     width: 300px !important;
   }
@@ -894,29 +1039,36 @@ a:hover{
   .bio .mainContent .description {
     width: 270px;
   }
+
   .bio .mainContent .description {
     width: 270px !important;
   }
+
   .game .mainContent .description {
     width: 270px !important;
   }
+
   .game .mainContent .media .photos {
     width: 270px !important;
   }
+
   .game .mainContent .media .photos img {
     width: 270px;
   }
+
   .game .mainContent .media .video {
     width: 270px !important;
   }
+
   .game .mainContent .media .video video {
     width: 270px !important;
   }
+
   .sidebar .header {
     font-size: 12px;
   }
 
-  .sidebar .projects .sidebarGame{
+  .sidebar .projects .sidebarGame {
     font-size: 12px;
   }
 }
@@ -928,8 +1080,13 @@ a:hover{
 }
 
 .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 55px;
   margin: 0px;
@@ -939,20 +1096,33 @@ a:hover{
 .box-sm {
   height: 4px;
   margin: 0;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
 
 .box-sm:hover {
-  flex-grow: 12;
+  -webkit-box-flex: 12;
+      -ms-flex-positive: 12;
+          flex-grow: 12;
 }
 
 .container,
 .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container {
@@ -961,17 +1131,20 @@ a:hover{
   margin: 20px;
   padding: 20px;
   outline-offset: -5px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .post {
   margin-bottom: 50px;
 }
+
 .post h2,
 .post p {
   text-align: center;
   margin-bottom: 0px;
 }
+
 .post h2 {
   font-size: 60px;
   color: #e0e0e0;
@@ -991,7 +1164,7 @@ a:hover{
 }
 
 .green {
-  background-color: #91cece;
+  background-color: #74b8bb;
 }
 
 .blue {
@@ -1002,12 +1175,14 @@ a:hover{
   background-color: #383856;
 }
 
-footer div{
-  background: linear-gradient(rgb(131, 178, 183)-10%, rgb(120, 197, 189) );
+footer div {
+  background: -o-linear-gradient(#74b8bb -10%, #83B2B7);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-10%, #74b8bb), to(#83B2B7));
+  background: linear-gradient(#74b8bb -10%, #83B2B7);
   padding: 35px 0;
 }
 
-footer div p{
+footer div p {
   font-size: 25px;
   text-align: center;
 }

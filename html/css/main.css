@@ -102,7 +102,7 @@ body::-webkit-scrollbar-thumb {
   max-height: 600px;
 }
 
-#unity-warning{
+#unity-warning p{
   font-weight: bold;
   text-transform: uppercase;
 }

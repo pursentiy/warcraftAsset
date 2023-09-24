@@ -133,7 +133,7 @@ body::-webkit-scrollbar-thumb {
 .sidebar .header {
   font-family: Arcade;
   padding: 40px 15px 10px 30px;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .sidebar .projects {
@@ -152,7 +152,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .sidebar .projects .sidebarGame:before {
@@ -272,7 +272,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .project .header.main {
-  padding: 150px 0;
+  padding: 75px 0;
 }
 
 .project .header .gradient {
@@ -298,7 +298,7 @@ body::-webkit-scrollbar-thumb {
 
 .project .header .text .head {
   text-align: center;
-  font-size: 54px;
+  font-size: 45px;
   margin-top: 10px;
 }
 
@@ -313,7 +313,7 @@ body::-webkit-scrollbar-thumb {
 
 .mainContent .description .title {
   font-family: Arcade;
-  font-size: 40px;
+  font-size: 25px;
   margin: 15px 0 25px 0;
 }
 
@@ -325,7 +325,7 @@ body::-webkit-scrollbar-thumb {
 
 .mainContent .description .text {
   font-family: Arcade;
-  font-size: 30px;
+  font-size: 22px;
   /* line-height: 24px; */
   margin: 0;
 }
@@ -1188,6 +1188,6 @@ footer div {
 }
 
 footer div p {
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
 }

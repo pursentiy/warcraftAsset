@@ -58,10 +58,10 @@
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
-        container.style = "display: block";
+        warningBanner.style = "display: block";
         container.style = "display: none";
       } else {
-        container.style = "display: none";
+        warningBanner.style = "display: none";
       }
       loadingBar.style.display = "block";
 

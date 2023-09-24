@@ -58,10 +58,10 @@
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
-        fullScreenBlock.style = "display: none";
+        container.style = "display: block";
+        container.style = "display: none";
       } else {
-        // container.style = "width: " + width + "; height: " + height + "; margin: 25px 0 70px 0"
+        container.style = "display: none";
       }
       loadingBar.style.display = "block";
 

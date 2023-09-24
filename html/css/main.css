@@ -102,6 +102,11 @@ body::-webkit-scrollbar-thumb {
   max-height: 600px;
 }
 
+#unity-warning{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .sidebar::-webkit-scrollbar-thumb {
   border-radius: 10px;
   height: 50px;

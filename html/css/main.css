@@ -604,8 +604,12 @@ ul {
   list-style-type: none;
 }
 
-a:hover {
-  color: #91cece;
+a{
+  color: #cc1a1a;
+}
+
+a:hover{
+  color: #ffd33f;
 }
 
 .owl-theme .owl-dots .owl-dot.active span {

@@ -4,6 +4,7 @@
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
+      var warningBannerText = document.querySelector("#unity-warning p");
       var fullScreenBlock = document.querySelector("#unity-fullscreen-block");
 
       // Shows a temporary message banner/ribbon for a few seconds, or
@@ -60,6 +61,17 @@
         config.devicePixelRatio = 1;
         warningBanner.style = "display: block";
         container.style = "display: none";
+
+        var bannerText = "";
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+          bannerText = "! Cannot load WebGL preview on Tablet or Phone, use laptop instead !";
+        }
+        else{
+          bannerText = "! Cannot load WebGL Project preview as screen resolution is too small, required a wider one !";
+        }
+        warningBannerText.innerHTML = bannerText;
+
+        document.querySelector('.content p').style.color = 'red';
       } else {
         warningBanner.style = "display: none";
       }
